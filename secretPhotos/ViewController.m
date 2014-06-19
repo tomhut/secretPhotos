@@ -68,9 +68,9 @@ static NSString * const cellReuseIdentifier = @"secretPhotoCell";
                                         [self revealImageAtIndexPath:indexPath];
                                     } else {
                                         [self handleLocalAuthenticationError:error];
-                                }
-                            });
-                        }];
+                                    }
+                                });
+                            }];
     } else {
         //Could not evaluate policy
         [self handleLocalAuthenticationError:authError];
